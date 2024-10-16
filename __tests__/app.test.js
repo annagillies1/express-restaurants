@@ -140,7 +140,7 @@ describe("The app's", () => {
         
     });
 
-    it("DELETE restaurants returns array without deleted content", async () => {
+    it("DELETE restaurant returns array without deleted content", async () => {
         const responseArray = await request(app).get("/restaurants")
 
         const length = responseArray.body.length
